@@ -23,7 +23,7 @@ export default function Home() {
           </a>
         </div>
         { }
-        <section className="section text-center py-16 md:py-32">
+        <section className="section text-center py-16 md:py-32 mt-12 md:mt-0">
 
           { }
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
@@ -73,7 +73,7 @@ export default function Home() {
           <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
             A friendly and relentlessly efficient bot. <br />
             It finds, evaluates, and applies to jobs entirely on its own. <br /><br />
-            <div style={{ display: 'block', marginTop: '1.5rem', fontSize: '1.25rem', fontWeight: '800', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.4' }}>
+            <div style={{ display: 'block', marginTop: '1.5rem', fontSize: '1.25rem', fontWeight: '400', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.4' }}>
               Just chat with it like a friend, and watch it execute.
             </div>
           </p>
