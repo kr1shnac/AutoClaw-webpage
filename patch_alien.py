@@ -43,7 +43,7 @@ new_mascot = """          <div className="hero-mascot relative">
           </div>
 """
 
-# Replace lines 11 to 50
+
 lines = lines[:10] + [new_mascot] + lines[50:]
 
 with open('src/app/page.js', 'w') as f:

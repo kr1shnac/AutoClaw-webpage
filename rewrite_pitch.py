@@ -3,7 +3,7 @@ import sys
 with open('src/app/page.js', 'r') as f:
     text = f.read()
 
-# Replace the "Why better" segment
+
 old_why_better = """        {/* WHY OUR SYSTEM IS BETTER */}
         <section id="why-better" className="section features-section">
           <div className="section-header">

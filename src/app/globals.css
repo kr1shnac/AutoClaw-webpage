@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Hide Next.js Dev Indicator Watermark */
 nextjs-portal,
 #__next-build-watcher,
 #nextjs-dev-indicator,
@@ -48,7 +47,6 @@ body {
   margin: 0 auto;
 }
 
-/* Star field */
 .star-overlay {
   position: fixed;
   top: 0;
@@ -78,7 +76,6 @@ body {
   }
 }
 
-/* Robotic Background Elements */
 .robotic-bg {
   position: fixed;
   top: 0;
@@ -156,7 +153,6 @@ body {
   }
 }
 
-/* Animations for Cute Bot */
 @keyframes cuteFloat {
 
   0%,
@@ -212,7 +208,6 @@ body {
   transform-origin: bottom center;
 }
 
-/* Custom Badge */
 .capsule-badge {
   display: inline-flex;
   align-items: center;
@@ -243,7 +238,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Mobile Responsiveness Improvements */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 3rem !important;

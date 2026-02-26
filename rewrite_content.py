@@ -95,7 +95,7 @@ new_content = """        {/* WHY OUR SYSTEM IS BETTER */}
         </section>
 """
 
-# Find lines to replace
+
 start_idx = -1
 end_idx = -1
 

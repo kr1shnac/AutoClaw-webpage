@@ -1,7 +1,7 @@
 with open('src/app/page.js', 'r') as f:
     text = f.read()
 
-# 1. Remove the entire Master Execution Blueprint section
+
 old_blueprint = """        {/* SYSTEM ARCHITECTURE & EXECUTION FLOW */}
         <section id="architecture" className="section quickstart-section">
           <div className="section-header">
@@ -46,7 +46,7 @@ old_blueprint = """        {/* SYSTEM ARCHITECTURE & EXECUTION FLOW */}
 
 text = text.replace(old_blueprint, '')
 
-# 2. Replace the entire footer with new Telegram + Contributor section
+
 old_footer = """      <footer className="footer section">
         <div className="footer-top">
           <div className="newsletter">
