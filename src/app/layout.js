@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AutoClaw — Automated AI Assistant",
+  title: "AutoClaw",
   description: "The AI that actually does things autonomously. Build your future.",
 };
 

@@ -16,38 +16,8 @@ export default function Home() {
 
       <main className="main-content relative">
         {/* TOP NAVIGATION / GITHUB LINK */}
-        <div style={{ width: '100%', maxWidth: '1200px', padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 50 }}>
-          {/* Logo */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }} className="group cursor-pointer">
-            <div style={{ width: '40px', height: '40px', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <div style={{ position: 'absolute', inset: 0, background: 'var(--accent-gradient)', filter: 'blur(8px)', opacity: '0.5', borderRadius: '50%' }} className="group-hover:opacity-80 transition-opacity"></div>
-              <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ zIndex: 1, position: 'relative' }}>
-                <defs>
-                  <linearGradient id="navBodyGrad" x1="0" y1="0" x2="100" y2="100">
-                    <stop stopColor="#1e293b" />
-                    <stop offset="1" stopColor="#0f172a" />
-                  </linearGradient>
-                  <linearGradient id="navScreenGrad" x1="0" y1="0" x2="0" y2="100">
-                    <stop stopColor="#0f172a" />
-                    <stop offset="1" stopColor="#020617" />
-                  </linearGradient>
-                </defs>
-                <rect x="15" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
-                <rect x="77" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
-                <rect x="20" y="25" width="60" height="50" rx="15" fill="url(#navBodyGrad)" stroke="#ec4899" strokeWidth="2" />
-                <rect x="28" y="33" width="44" height="30" rx="6" fill="url(#navScreenGrad)" stroke="#334155" strokeWidth="1" />
-                <path d="M 38 45 Q 42 42 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-                <path d="M 54 45 Q 58 42 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-                <circle cx="35" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-                <circle cx="65" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-                <path d="M 47 52 Q 50 55 53 52" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" fill="none" />
-              </svg>
-            </div>
-            <span style={{ fontSize: '1.5rem', fontWeight: '800', color: '#fff', letterSpacing: '-0.02em' }}>AutoClaw</span>
-          </div>
-
-          {/* GitHub Header Button */}
-          <a href="https://github.com/krishna-cx" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.6rem 1.2rem', borderRadius: '999px', color: '#fff', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', backdropFilter: 'blur(10px)' }} className="hover:bg-[rgba(255,255,255,0.1)] transition-all">
+        <div style={{ width: '100%', maxWidth: '1200px', padding: '2rem', display: 'flex', justifyContent: 'flex-end', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 50 }}>
+          <a href="https://github.com/kr1shnac/AutoClaw.git" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.6rem 1.2rem', borderRadius: '999px', color: '#fff', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', backdropFilter: 'blur(10px)' }} className="hover:bg-[rgba(255,255,255,0.1)] transition-all">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
             Star on GitHub
           </a>
@@ -92,17 +62,20 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 style={{ display: 'inline-block', fontSize: '5rem', fontWeight: '900', marginBottom: '0.5rem', letterSpacing: '-0.03em', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.1' }}>
+          <h1 className="hero-title" style={{ display: 'inline-block', fontSize: '5rem', fontWeight: '900', marginBottom: '0.5rem', letterSpacing: '-0.03em', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.1' }}>
             AutoClaw
           </h1>
 
-          <h2 style={{ fontSize: '1.75rem', fontWeight: '700', color: '#fff', marginBottom: '1.5rem', letterSpacing: '-0.01em' }}>
+          <h2 className="hero-subtitle" style={{ fontSize: '1.75rem', fontWeight: '700', color: '#fff', marginBottom: '1.5rem', letterSpacing: '-0.01em' }}>
             The AI that actually does things.
           </h2>
 
           <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
             A friendly and relentlessly efficient bot. <br />
-            It finds, evaluates, and applies to jobs entirely on its own.
+            It finds, evaluates, and applies to jobs entirely on its own. <br /><br />
+            <span style={{ color: '#e2e8f0', fontWeight: '500', background: 'rgba(56,189,248,0.1)', padding: '0.2rem 0.5rem', borderRadius: '4px', border: '1px solid rgba(56,189,248,0.2)' }}>
+              Just chat with it like a friend, and watch it execute.
+            </span>
           </p>
 
           <div className="capsule-badge" style={{ marginBottom: '1rem' }}>
@@ -153,7 +126,7 @@ export default function Home() {
 
         {/* TELEGRAM INTEGRATION */}
         <section id="telegram" className="section" style={{ paddingTop: '5rem', paddingBottom: '2rem' }}>
-          <div style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9))', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '24px', padding: '3rem', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '3rem', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
+          <div className="telegram-card" style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9))', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '24px', padding: '3rem', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '3rem', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
             {/* Background Glow */}
             <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '300px', height: '300px', background: '#38bdf8', filter: 'blur(120px)', opacity: '0.15', borderRadius: '50%', zIndex: 0, pointerEvents: 'none' }}></div>
 
@@ -164,7 +137,7 @@ export default function Home() {
                     <path d="M21.1406 2.85938C20.6719 2.625 20.1094 2.67188 19.6875 2.95312L2.6875 14.9531C2.26562 15.25 2.07812 15.7969 2.23438 16.2969C2.40625 16.8125 2.85938 17.1562 3.40625 17.2031L8.53125 17.5938L11.5312 21.0938C11.8125 21.4219 12.2344 21.5781 12.6562 21.5469C13.0781 21.5312 13.4688 21.2969 13.6719 20.9219L15.3906 17.9062L19.2344 19.3438C19.5625 19.4688 19.9219 19.4375 20.2188 19.25C20.5156 19.0625 20.7188 18.75 20.7812 18.4062L21.7812 3.90625C21.8281 3.46875 21.5781 3.0625 21.1406 2.85938ZM18.2344 5.92188L8.6875 12.6562L5.85938 12.4375L18.2344 5.92188ZM12.7812 18.1562L10.7031 15.7344L17.7656 8.53125L12.7812 18.1562Z" fill="white" />
                   </svg>
                 </div>
-                <h2 style={{ fontSize: '2.5rem', fontWeight: '800', color: '#fff', margin: 0, letterSpacing: '-0.02em' }}>
+                <h2 className="telegram-title" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#fff', margin: 0, letterSpacing: '-0.02em' }}>
                   Works with <span style={{ color: '#38bdf8' }}>Telegram</span>
                 </h2>
               </div>
@@ -265,22 +238,22 @@ export default function Home() {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ margin: '0 6px' }}><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>
           and slight desperation by
         </p>
-        <h2 style={{ fontSize: '3.5rem', fontWeight: '900', color: '#fff', marginBottom: '1.5rem', lineHeight: '1.1' }}>
+        <h2 className="footer-title" style={{ display: 'flex', alignItems: 'center', fontSize: '3.5rem', fontWeight: '900', color: '#fff', marginBottom: '1.5rem', lineHeight: '1.1' }}>
           <Link href="https://krishnac.vercel.app/" target="_blank" style={{ background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }} className="hover:opacity-80 transition-opacity">Krishna</Link>
-          <span style={{ color: 'var(--text-secondary)', margin: '0 0.5rem', fontSize: '2.5rem' }}>&amp;</span>
+          <span className="footer-ampersand" style={{ color: 'var(--text-secondary)', margin: '0 0.5rem', fontSize: '2.5rem' }}>&amp;</span>
           <Link href="https://nuhan04.vercel.app/" target="_blank" style={{ background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }} className="hover:opacity-80 transition-opacity">Nuhan</Link>
         </h2>
 
         <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '650px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
-          We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch in the next two to three months. In the meantime, it&apos;s completely open-source, so feel free to check out our progress on GitHub, or drop us an email if you want to collaborate.
+          We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch in the next two to three months. In the meantime, it&apos;s completely open-source, so feel free to check out our progress on GitHub, drop us an email if you want to collaborate, or <span style={{ color: '#fff', fontWeight: '700', borderBottom: '2px solid #ec4899' }}>hire us.</span>
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-          <a href="https://github.com/krishna-cx" target="_blank" style={{ background: 'rgba(236,72,153,0.15)', color: '#fff', border: '1px solid rgba(236,72,153,0.5)', padding: '0.8rem 2rem', borderRadius: '999px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} className="hover:bg-[#ec4899]">
+          <a href="https://github.com/kr1shnac/AutoClaw.git" target="_blank" style={{ background: 'rgba(236,72,153,0.15)', color: '#fff', border: '1px solid rgba(236,72,153,0.5)', padding: '0.8rem 2rem', borderRadius: '999px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} className="hover:bg-[#ec4899]">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
             Contribute on GitHub
           </a>
-          <a href="mailto:autoclaw.dev@gmail.com" style={{ background: 'rgba(139,92,246,0.15)', color: '#fff', border: '1px solid rgba(139,92,246,0.5)', padding: '0.8rem 2rem', borderRadius: '999px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} className="hover:bg-[#8b5cf6]">
+          <a href="mailto:krishnacgowda10@gmail.com" style={{ background: 'rgba(139,92,246,0.15)', color: '#fff', border: '1px solid rgba(139,92,246,0.5)', padding: '0.8rem 2rem', borderRadius: '999px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} className="hover:bg-[#8b5cf6]">
             <span style={{ display: 'flex', alignItems: 'center' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
             </span>
