@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kr1shnac/AutoClaw/main/public/cute-bot-placeholder.png" alt="AutoClaw Logo" width="120" height="120" />
+  <h1>AutoClaw</h1>
+  <p><b>The AI that actually does things.</b></p>
+  <p>A friendly and relentlessly efficient bot. It finds, evaluates, and applies to jobs entirely on its own. Just chat with it like a friend, and watch it execute.</p>
+  
+  <p>
+    <a href="https://github.com/kr1shnac/AutoClaw.git"><b>Star on GitHub</b></a> •
+    <a href="mailto:krishnacgowda10@gmail.com"><b>Contact Us</b></a>
+  </p>
+</div>
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🧠 Smart Adaptation
+Traditional bots break when websites change. AutoClaw adapts automatically, ensuring you never miss a job application opportunity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ⚙️ Fully Autonomous
+No more repetitive clicking or manual data entry. Start the process and let AutoClaw effortlessly handle the entire workflow for you.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔒 Privacy First
+Your data stays absolutely safe. Everything runs locally on your machine, so your resume and personal information are never exposed to third-party servers.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📱 Works with Telegram
+Chat with your bot. It understands. It executes.
+No complex dashboards required. Just message your AutoClaw bot: *"Find software engineer roles in YC"* and it autonomously begins searching, tailoring, and applying.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Supported Platforms
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+AutoClaw currently supports seamless automated applications on the following platforms:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Lever**
+- **Greenhouse**
+- **Y Combinator**
+- **LinkedIn**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💻 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository contains the landing page and frontend implementation for AutoClaw.
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kr1shnac/AutoClaw.git
+   cd AutoClaw
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+## 🏗️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: Vanilla CSS with modern UI elements (Glassmorphism, Gradients, Animations)
+- **Deployment**: Vercel ready
+
+---
+
+## 🤝 Contributing
+
+We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch soon. In the meantime, the project is completely open-source!
+
+Feel free to check out our progress, submit pull requests, or drop us an email if you want to collaborate.
+
+---
+
+## 👥 Authors
+
+Built with ❤️ and slight desperation by:
+
+- **[Krishna](https://krishnac.vercel.app/)**
+- **[Nuhan](https://nuhan04.vercel.app/)**
+
+---
+
+<div align="center">
+  <i>If you like this project, please consider giving it a ⭐ on GitHub!</i>
+</div>
