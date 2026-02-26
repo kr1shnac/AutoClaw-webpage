@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="robotic-bg">
-        {}
+        { }
         <div className="bg-node" style={{ top: '10%', left: '15%', animationDelay: '0s' }}></div>
         <div className="bg-node" style={{ top: '30%', left: '80%', animationDelay: '2s' }}></div>
         <div className="bg-node" style={{ top: '60%', left: '10%', animationDelay: '4s' }}></div>
@@ -15,17 +15,17 @@ export default function Home() {
       <div className="star-overlay"></div>
 
       <main className="main-content relative">
-        {}
+        { }
         <div style={{ width: '100%', maxWidth: '1200px', padding: '2rem', display: 'flex', justifyContent: 'flex-end', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 50 }}>
           <a href="https://github.com/kr1shnac/AutoClaw.git" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.6rem 1.2rem', borderRadius: '999px', color: '#fff', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', backdropFilter: 'blur(10px)' }} className="hover:bg-[rgba(255,255,255,0.1)] transition-all">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
             Star on GitHub
           </a>
         </div>
-        {}
-        <section className="section" style={{ paddingTop: '8rem', paddingBottom: '6rem', textAlign: 'center' }}>
+        { }
+        <section className="section text-center py-16 md:py-32">
 
-          {}
+          { }
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
             <div className="animate-cute-float" style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '120px', height: '120px', background: 'var(--accent-gradient)', filter: 'blur(50px)', opacity: '0.4', borderRadius: '50%', zIndex: '-1' }}></div>
@@ -40,22 +40,22 @@ export default function Home() {
                     <stop offset="1" stopColor="#020617" />
                   </linearGradient>
                 </defs>
-                {}
+                { }
                 <rect x="15" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
                 <rect x="77" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
-                {}
+                { }
                 <rect x="20" y="25" width="60" height="50" rx="15" fill="url(#bodyGrad)" stroke="#ec4899" strokeWidth="2" />
-                {}
+                { }
                 <rect x="28" y="33" width="44" height="30" rx="6" fill="url(#screenGrad)" stroke="#334155" strokeWidth="1" />
-                {}
+                { }
                 <path d="M 38 45 Q 42 42 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
                 <path d="M 54 45 Q 58 42 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-                {}
+                { }
                 <circle cx="35" cy="52" r="3" fill="#ec4899" opacity="0.6" />
                 <circle cx="65" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-                {}
+                { }
                 <path d="M 47 52 Q 50 55 53 52" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" fill="none" />
-                {}
+                { }
                 <circle cx="25" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '0.5s' }} />
                 <circle cx="75" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '1s' }} />
               </svg>
@@ -73,10 +73,7 @@ export default function Home() {
           <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
             A friendly and relentlessly efficient bot. <br />
             It finds, evaluates, and applies to jobs entirely on its own. <br /><br />
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', background: 'linear-gradient(90deg, rgba(236,72,153,0.15), rgba(56,189,248,0.15))', padding: '0.75rem 1.5rem', borderRadius: '999px', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', fontSize: '1.1rem', fontWeight: '600', marginTop: '1rem', boxShadow: '0 4px 20px -5px rgba(236,72,153,0.3)' }}>
-              <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '28px', height: '28px', background: '#ec4899', borderRadius: '50%', boxShadow: '0 0 10px rgba(236,72,153,0.5)' }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-              </span>
+            <div style={{ display: 'block', marginTop: '1.5rem', fontSize: '1.25rem', fontWeight: '800', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.4' }}>
               Just chat with it like a friend, and watch it execute.
             </div>
           </p>
@@ -87,12 +84,12 @@ export default function Home() {
           </div>
         </section>
 
-        {}
-        <section id="features" className="section" style={{ paddingTop: '2rem' }}>
+        { }
+        <section id="features" className="section py-12 md:py-16">
           <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '3rem', color: '#fff' }}>
             Why AutoClaw?
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
             <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(236,72,153,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
               <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
@@ -127,10 +124,10 @@ export default function Home() {
           </div>
         </section>
 
-        {}
-        <section id="telegram" className="section" style={{ paddingTop: '5rem', paddingBottom: '2rem' }}>
+        { }
+        <section id="telegram" className="section py-12 md:py-20">
           <div className="telegram-card" style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9))', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '24px', padding: '3rem', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '3rem', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
-            {}
+            { }
             <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '300px', height: '300px', background: '#38bdf8', filter: 'blur(120px)', opacity: '0.15', borderRadius: '50%', zIndex: 0, pointerEvents: 'none' }}></div>
 
             <div style={{ flex: '1 1 400px', zIndex: 1 }}>
@@ -155,10 +152,10 @@ export default function Home() {
 
             </div>
 
-            {}
+            { }
             <div style={{ flex: '1 1 300px', zIndex: 1, position: 'relative', display: 'flex', justifyContent: 'center' }}>
               <div style={{ width: '100%', maxWidth: '340px', background: '#0f172a', border: '1px solid #1e293b', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px -5px rgba(0, 0, 0, 0.4)' }}>
-                {}
+                { }
                 <div style={{ background: '#1e293b', padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.875rem', borderBottom: '1px solid #334155' }}>
                   <div style={{ width: '40px', height: '40px', background: 'var(--accent-gradient)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="16" x2="8" y2="16" /><line x1="16" y1="16" x2="16" y2="16" /></svg>
@@ -168,13 +165,13 @@ export default function Home() {
                     <div style={{ color: '#38bdf8', fontSize: '0.8rem', fontWeight: '500' }}>bot</div>
                   </div>
                 </div>
-                {}
+                { }
                 <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1rem', background: '#020617', height: '240px' }}>
-                  {}
+                  { }
                   <div style={{ alignSelf: 'flex-end', background: '#38bdf8', color: '#0f172a', padding: '0.75rem 1rem', borderRadius: '16px 16px 4px 16px', maxWidth: '85%', fontSize: '0.9rem', fontWeight: '500', lineHeight: '1.4' }}>
                     Find and apply to frontend roles at YC startups.
                   </div>
-                  {}
+                  { }
                   <div style={{ alignSelf: 'flex-start', background: '#1e293b', color: '#e2e8f0', padding: '0.875rem 1rem', borderRadius: '16px 16px 16px 4px', maxWidth: '85%', fontSize: '0.9rem', border: '1px solid #334155', lineHeight: '1.5' }}>
                     <span style={{ fontWeight: '600', color: '#fff' }}>Understood! 🚀</span><br /><br />
                     Starting autonomous sequence...<br />
@@ -192,7 +189,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                {}
+                { }
                 <div style={{ padding: '0.75rem 1rem', background: '#0f172a', borderTop: '1px solid #1e293b', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <div style={{ flex: 1, height: '36px', background: '#1e293b', borderRadius: '18px', display: 'flex', alignItems: 'center', padding: '0 1rem' }}>
                     <span style={{ color: '#64748b', fontSize: '0.9rem' }}>Message...</span>
@@ -210,12 +207,12 @@ export default function Home() {
           </div>
         </section>
 
-        {}
-        <section id="targets" className="section" style={{ paddingTop: '5rem' }}>
+        { }
+        <section id="targets" className="section py-12 md:py-20">
           <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '3rem', color: '#fff' }}>
             Supported Platforms
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
               { name: 'Lever', color: '#38bdf8', symbol: 'L', url: 'https://lever.co' },
               { name: 'Greenhouse', color: '#10b981', symbol: 'G', url: 'https://greenhouse.io' },
@@ -234,14 +231,14 @@ export default function Home() {
 
       </main>
 
-      {}
-      <footer style={{ background: '#020617', padding: '4rem 2rem 3rem', marginTop: '4rem', borderTop: '2px solid rgba(236,72,153,0.3)', textAlign: 'center' }}>
-        <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
+      { }
+      <footer className="py-12 md:py-16 px-4 md:px-8 mt-12 md:mt-16 text-center border-t-2 border-[rgba(236,72,153,0.3)] bg-[#020617]">
+        <p className="flex flex-wrap items-center justify-center text-sm md:text-base font-semibold uppercase tracking-widest text-[#94a3b8] mb-2">
           Built with
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ margin: '0 6px' }}><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>
           and slight desperation by
         </p>
-        <h2 className="footer-title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3.5rem', fontWeight: '900', color: '#fff', marginBottom: '1.5rem', lineHeight: '1.1' }}>
+        <h2 className="footer-title flex flex-wrap items-center justify-center text-[2.5rem] md:text-[3.5rem] font-[900] text-white mb-6 leading-[1.1]">
           <Link href="https://krishnac.vercel.app/" target="_blank" style={{ background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }} className="hover:opacity-80 transition-opacity">Krishna</Link>
           <span className="footer-ampersand" style={{ color: 'var(--text-secondary)', margin: '0 0.5rem', fontSize: '2.5rem' }}>&amp;</span>
           <Link href="https://nuhan04.vercel.app/" target="_blank" style={{ background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }} className="hover:opacity-80 transition-opacity">Nuhan</Link>
