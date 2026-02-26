@@ -89,7 +89,9 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
 
             <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(236,72,153,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👁️</div>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
+              </div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Smart Adaptation</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
                 Traditional bots break when websites change. AutoClaw adapts automatically, ensuring you never miss an application.
@@ -97,7 +99,9 @@ export default function Home() {
             </div>
 
             <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚡</div>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+              </div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Fully Autonomous</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
                 No more repetitive clicking. Start the process and let AutoClaw effortlessly handle the entire workflow for you.
@@ -105,7 +109,9 @@ export default function Home() {
             </div>
 
             <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔒</div>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+              </div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Privacy First</h3>
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
                 Your data stays absolutely safe. Everything runs locally on your machine, so your resume is never exposed.
@@ -138,12 +144,9 @@ export default function Home() {
               </h3>
 
               <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '1.1rem', marginBottom: '2rem', maxWidth: '480px' }}>
-                No complex dashboards required. Just message your AutoClaw bot: <span style={{ color: '#e2e8f0', fontWeight: '500' }}>&quot;Find software engineer roles in NY&quot;</span> and it autonomously begins searching, tailoring, and applying.
+                No complex dashboards required. Just message your AutoClaw bot: <span style={{ color: '#e2e8f0', fontWeight: '500' }}>&quot;Find software engineer roles in YC&quot;</span> and it autonomously begins searching, tailoring, and applying.
               </p>
 
-              <a href="#" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(56,189,248,0.1)', border: '1px solid rgba(56,189,248,0.5)', padding: '0.8rem 1.75rem', borderRadius: '999px', color: '#38bdf8', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s' }} className="hover:bg-[rgba(56,189,248,0.2)] hover:scale-[1.05]">
-                Try Demo Bot ↗
-              </a>
             </div>
 
             {/* Chat UI Mockup */}
@@ -151,7 +154,9 @@ export default function Home() {
               <div style={{ width: '100%', maxWidth: '340px', background: '#0f172a', border: '1px solid #1e293b', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px -5px rgba(0, 0, 0, 0.4)' }}>
                 {/* Header */}
                 <div style={{ background: '#1e293b', padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.875rem', borderBottom: '1px solid #334155' }}>
-                  <div style={{ width: '40px', height: '40px', background: 'var(--accent-gradient)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.3rem' }}>🤖</div>
+                  <div style={{ width: '40px', height: '40px', background: 'var(--accent-gradient)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="16" x2="8" y2="16" /><line x1="16" y1="16" x2="16" y2="16" /></svg>
+                  </div>
                   <div>
                     <div style={{ color: '#fff', fontWeight: '600', fontSize: '0.95rem' }}>AutoClaw Bot</div>
                     <div style={{ color: '#38bdf8', fontSize: '0.8rem', fontWeight: '500' }}>bot</div>
@@ -167,9 +172,18 @@ export default function Home() {
                   <div style={{ alignSelf: 'flex-start', background: '#1e293b', color: '#e2e8f0', padding: '0.875rem 1rem', borderRadius: '16px 16px 16px 4px', maxWidth: '85%', fontSize: '0.9rem', border: '1px solid #334155', lineHeight: '1.5' }}>
                     <span style={{ fontWeight: '600', color: '#fff' }}>Understood! 🚀</span><br /><br />
                     Starting autonomous sequence...<br />
-                    <span style={{ color: '#38bdf8' }}>🔍 Found 12 roles.</span><br />
-                    ✍️ Tailoring your resume...<br />
-                    ✅ Applying now. I&apos;ll notify you soon.
+                    <span style={{ color: '#38bdf8', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+                      Found 12 roles.
+                    </span>
+                    <span style={{ color: '#e2e8f0', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" /></svg>
+                      Tailoring your resume...
+                    </span>
+                    <span style={{ color: '#e2e8f0', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
+                      Applying now. I&apos;ll notify you soon.
+                    </span>
                   </div>
                 </div>
                 {/* Input Area */}
@@ -197,14 +211,16 @@ export default function Home() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
             {[
-              { name: 'Lever', logo: 'https://logo.clearbit.com/lever.co', url: 'https://lever.co' },
-              { name: 'Greenhouse', logo: 'https://logo.clearbit.com/greenhouse.io', url: 'https://greenhouse.io' },
-              { name: 'Y Combinator', logo: 'https://logo.clearbit.com/ycombinator.com', url: 'https://ycombinator.com' },
-              { name: 'LinkedIn', logo: 'https://logo.clearbit.com/linkedin.com', url: 'https://linkedin.com' }
+              { name: 'Lever', color: '#38bdf8', symbol: 'L', url: 'https://lever.co' },
+              { name: 'Greenhouse', color: '#10b981', symbol: 'G', url: 'https://greenhouse.io' },
+              { name: 'Y Combinator', color: '#f97316', symbol: 'Y', url: 'https://ycombinator.com' },
+              { name: 'LinkedIn', color: '#0ea5e9', symbol: 'in', url: 'https://linkedin.com' }
             ].map((platform, i) => (
-              <Link key={platform.name} href={platform.url} target="_blank" style={{ textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,41,59,0.5), rgba(15,23,42,0.8))', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center', transition: 'all 0.3s', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }} className="hover:scale-105 hover:border-[rgba(236,72,153,0.5)]">
-                <img src={platform.logo} alt={`${platform.name} logo`} style={{ width: '40px', height: '40px', borderRadius: '6px', objectFit: 'contain', background: '#fff', padding: platform.name === 'Y Combinator' ? '0' : '2px' }} />
-                <h3 style={{ color: '#cbd5e1', fontSize: '1.15rem', fontWeight: '600', margin: 0 }}>{platform.name}</h3>
+              <Link key={platform.name} href={platform.url} target="_blank" style={{ textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,41,59,0.5), rgba(15,23,42,0.8))', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center', transition: 'all 0.3s', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', position: 'relative', overflow: 'hidden' }} className="hover:-translate-y-2 hover:border-[rgba(255,255,255,0.2)] hover:shadow-2xl hover:shadow-[#0ea5e9]/20 group">
+                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: `linear-gradient(135deg, ${platform.color} 0%, #0f172a 120%)`, display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: `0 4px 20px -5px ${platform.color}, inset 0 1px 1px rgba(255,255,255,0.4)`, zIndex: 1 }}>
+                  <span style={{ color: '#fff', fontSize: platform.symbol === 'in' ? '1.5rem' : '1.75rem', fontWeight: '800', fontFamily: platform.symbol === 'in' ? 'sans-serif' : 'serif', letterSpacing: platform.symbol === 'in' ? '-1px' : '0' }}>{platform.symbol}</span>
+                </div>
+                <h3 style={{ color: '#f8fafc', fontSize: '1.25rem', fontWeight: '700', margin: 0, zIndex: 1 }}>{platform.name}</h3>
               </Link>
             ))}
           </div>
@@ -214,8 +230,10 @@ export default function Home() {
 
       {/* COMPACT FOOTER */}
       <footer style={{ background: '#020617', padding: '4rem 2rem 3rem', marginTop: '4rem', borderTop: '2px solid rgba(236,72,153,0.3)', textAlign: 'center' }}>
-        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
-          Built with ☕ and slight desperation by
+        <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          Built with
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ margin: '0 6px' }}><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>
+          and slight desperation by
         </p>
         <h2 style={{ fontSize: '3.5rem', fontWeight: '900', color: '#fff', marginBottom: '1.5rem', lineHeight: '1.1' }}>
           <Link href="https://krishnac.vercel.app/" target="_blank" style={{ background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textDecoration: 'none' }} className="hover:opacity-80 transition-opacity">Krishna</Link>
@@ -233,7 +251,10 @@ export default function Home() {
             Contribute on GitHub
           </a>
           <a href="mailto:autoclaw.dev@gmail.com" style={{ background: 'rgba(139,92,246,0.15)', color: '#fff', border: '1px solid rgba(139,92,246,0.5)', padding: '0.8rem 2rem', borderRadius: '999px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', transition: 'all 0.3s', display: 'flex', alignItems: 'center', gap: '0.5rem' }} className="hover:bg-[#8b5cf6]">
-            <span>✉️</span> Drop us an Email
+            <span style={{ display: 'flex', alignItems: 'center' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+            </span>
+            Drop us an Email
           </a>
         </div>
       </footer>
