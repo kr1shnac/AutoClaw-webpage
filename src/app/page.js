@@ -16,7 +16,37 @@ export default function Home() {
 
       <main className="main-content relative">
         {/* TOP NAVIGATION / GITHUB LINK */}
-        <div style={{ width: '100%', maxWidth: '1200px', padding: '2rem', display: 'flex', justifyContent: 'flex-end', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 50 }}>
+        <div style={{ width: '100%', maxWidth: '1200px', padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', zIndex: 50 }}>
+          {/* Logo */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }} className="group cursor-pointer">
+            <div style={{ width: '40px', height: '40px', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'var(--accent-gradient)', filter: 'blur(8px)', opacity: '0.5', borderRadius: '50%' }} className="group-hover:opacity-80 transition-opacity"></div>
+              <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ zIndex: 1, position: 'relative' }}>
+                <defs>
+                  <linearGradient id="navBodyGrad" x1="0" y1="0" x2="100" y2="100">
+                    <stop stopColor="#1e293b" />
+                    <stop offset="1" stopColor="#0f172a" />
+                  </linearGradient>
+                  <linearGradient id="navScreenGrad" x1="0" y1="0" x2="0" y2="100">
+                    <stop stopColor="#0f172a" />
+                    <stop offset="1" stopColor="#020617" />
+                  </linearGradient>
+                </defs>
+                <rect x="15" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
+                <rect x="77" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
+                <rect x="20" y="25" width="60" height="50" rx="15" fill="url(#navBodyGrad)" stroke="#ec4899" strokeWidth="2" />
+                <rect x="28" y="33" width="44" height="30" rx="6" fill="url(#navScreenGrad)" stroke="#334155" strokeWidth="1" />
+                <path d="M 38 45 Q 42 42 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
+                <path d="M 54 45 Q 58 42 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
+                <circle cx="35" cy="52" r="3" fill="#ec4899" opacity="0.6" />
+                <circle cx="65" cy="52" r="3" fill="#ec4899" opacity="0.6" />
+                <path d="M 47 52 Q 50 55 53 52" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" fill="none" />
+              </svg>
+            </div>
+            <span style={{ fontSize: '1.5rem', fontWeight: '800', color: '#fff', letterSpacing: '-0.02em' }}>AutoClaw</span>
+          </div>
+
+          {/* GitHub Header Button */}
           <a href="https://github.com/krishna-cx" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.6rem 1.2rem', borderRadius: '999px', color: '#fff', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', backdropFilter: 'blur(10px)' }} className="hover:bg-[rgba(255,255,255,0.1)] transition-all">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
             Star on GitHub
@@ -242,7 +272,7 @@ export default function Home() {
         </h2>
 
         <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '650px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
-          We built AutoClaw because applying to jobs manually is soul-crushing. It&apos;s completely open-source, so feel free to steal our code, contribute on GitHub, or drop us an email if you want to collaborate (or hire us).
+          We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch in the next two to three months. In the meantime, it&apos;s completely open-source, so feel free to check out our progress on GitHub, or drop us an email if you want to collaborate.
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
