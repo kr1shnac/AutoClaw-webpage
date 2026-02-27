@@ -9,11 +9,10 @@ export default function HeroSection() {
   useEffect(() => {
     setMounted(true);
     const timers = [
-      setTimeout(() => setPhase(1), 100),   // Bot appears + SYSTEM ONLINE
-      setTimeout(() => setPhase(2), 1600),  // READY TO WORK.
-      setTimeout(() => setPhase(3), 3000),  // Intro fades, bot drops
-      setTimeout(() => setPhase(4), 3600),  // Impacts title, title glows, bot rests
-      setTimeout(() => setPhase(5), 4600),  // Floats
+      setTimeout(() => setPhase(1), 300),   // Bot appears and waves Hi
+      setTimeout(() => setPhase(2), 2400),  // Intro fades, bot drops
+      setTimeout(() => setPhase(3), 3000),  // Bot hits text, text glows
+      setTimeout(() => setPhase(4), 4000),  // Bot floats back gently
     ];
     return () => timers.forEach(clearTimeout);
   }, []);
@@ -40,75 +39,61 @@ export default function HeroSection() {
           alignItems: 'center',
           justifyContent: 'center',
           background: '#0b0f19',
-          opacity: phase < 3 ? 1 : 0,
-          pointerEvents: phase >= 3 ? 'none' : 'auto',
+          opacity: phase < 2 ? 1 : 0,
+          pointerEvents: phase >= 2 ? 'none' : 'auto',
           transition: 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
         }}
       >
-        {/* Ambient glow in background setup */}
+        {/* Ambient gentle pink glow 💖 */}
         <div
           style={{
             position: 'absolute',
-            width: '400px',
-            height: '400px',
+            width: '350px',
+            height: '350px',
             background: 'var(--accent-gradient)',
-            filter: 'blur(120px)',
-            opacity: phase >= 2 ? 0.3 : 0.1,
+            filter: 'blur(100px)',
+            opacity: phase >= 1 ? 0.4 : 0.1,
             transition: 'opacity 1s ease',
             borderRadius: '50%',
-            animation: 'pulseGlow 4s ease-in-out infinite',
+            animation: 'pulseGlow 3s ease-in-out infinite',
             zIndex: 1,
           }}
         />
 
-        {/* Huge Bot Appears */}
+        {/* Cute Smiling Bot Appears */}
         <div
           style={{
             position: 'relative',
             zIndex: 2,
             transform:
               phase === 0
-                ? 'scale(0.8) translateY(30px)'
-                : phase < 3
-                  ? 'scale(1.4) translateY(0)'
-                  : 'scale(1) translateY(250px)', // drops down
-            opacity: phase === 0 ? 0 : phase < 3 ? 1 : 0,
+                ? 'scale(0.8) translateY(30px) rotate(-5deg)'
+                : phase === 1
+                  ? 'scale(1.4) translateY(0) rotate(5deg)'
+                  : 'scale(0.8) translateY(250px) rotate(0deg)', // drops down
+            opacity: phase === 0 ? 0 : phase < 2 ? 1 : 0,
             transition: 'transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s ease',
           }}
         >
           <BotSVG size={140} idSuffix="intro" />
-        </div>
 
-        {/* Sleek Pill Badge */}
-        <div
-          style={{
-            marginTop: '2.5rem',
-            background: 'rgba(15, 23, 42, 0.8)',
-            border: '1px solid rgba(139, 92, 246, 0.4)',
-            borderRadius: '12px',
-            padding: '0.6rem 2rem',
-            zIndex: 2,
-            transform: phase >= 1 && phase < 3 ? 'scale(1) translateY(0)' : 'scale(0.9) translateY(15px)',
-            opacity: phase >= 1 && phase < 3 ? 1 : 0,
-            transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
-            boxShadow: '0 0 30px rgba(139, 92, 246, 0.15)',
-            backdropFilter: 'blur(10px)',
-          }}
-        >
-          <span
+          {/* Simple Waving Hand next to Bot */}
+          <div
             style={{
-              fontSize: '1.1rem',
-              fontWeight: '800',
-              letterSpacing: '0.15em',
-              background: phase < 2 ? '#94a3b8' : 'var(--accent-gradient)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              transition: 'all 0.4s ease',
-              textTransform: 'uppercase'
+              position: 'absolute',
+              right: '-60px',
+              top: '5%',
+              fontSize: '4rem',
+              animation: 'waveHand 1.2s ease-in-out infinite',
+              transformOrigin: '70% 70%',
+              opacity: phase === 1 ? 1 : 0,
+              transform: phase === 1 ? 'scale(1)' : 'scale(0.5)',
+              transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
+              filter: 'drop-shadow(0 0 10px rgba(236,72,153,0.3))',
             }}
           >
-            {phase < 2 ? 'SYSTEM ONLINE' : 'READY TO WORK.'}
-          </span>
+            👋
+          </div>
         </div>
       </div>
 
@@ -117,14 +102,14 @@ export default function HeroSection() {
         {/* Bot lands on text */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
           <div
-            className={phase >= 5 ? 'animate-cute-float' : ''}
+            className={phase >= 4 ? 'animate-cute-float' : ''}
             style={{
               position: 'relative',
-              opacity: phase >= 3 ? 1 : 0,
+              opacity: phase >= 2 ? 1 : 0,
               transform:
-                phase === 3
+                phase === 2
                   ? 'translateY(25px) scale(0.95)' // The hit down
-                  : phase >= 4
+                  : phase >= 3
                     ? 'translateY(0) scale(1)' // Rests
                     : 'translateY(-150px) scale(1.2)', // Matches drop start
               transition: 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
@@ -145,8 +130,8 @@ export default function HeroSection() {
             letterSpacing: '-0.03em',
             lineHeight: '1.1',
             position: 'relative',
-            opacity: phase >= 3 ? 1 : 0,
-            transform: phase >= 3 ? 'translateY(0)' : 'translateY(30px)',
+            opacity: phase >= 2 ? 1 : 0,
+            transform: phase >= 2 ? 'translateY(0)' : 'translateY(30px)',
             transition: 'opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s',
           }}
         >
@@ -154,7 +139,7 @@ export default function HeroSection() {
           <span
             style={{
               color: '#ffffff',
-              opacity: phase >= 4 ? 0 : 1,
+              opacity: phase >= 3 ? 0 : 1,
               transition: 'opacity 0.6s ease',
               position: 'relative',
               zIndex: 2,
@@ -172,7 +157,7 @@ export default function HeroSection() {
               background: 'var(--accent-gradient)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              opacity: phase >= 4 ? 1 : 0,
+              opacity: phase >= 3 ? 1 : 0,
               transition: 'opacity 0.6s ease',
               zIndex: 3,
             }}
@@ -181,7 +166,7 @@ export default function HeroSection() {
           </span>
 
           {/* Explosion / Glow Burst at impact */}
-          {(phase === 4) && (
+          {(phase === 3) && (
             <div
               style={{
                 position: 'absolute',
@@ -211,8 +196,8 @@ export default function HeroSection() {
             color: '#fff',
             marginBottom: '1.5rem',
             letterSpacing: '-0.01em',
-            opacity: phase >= 3 ? 1 : 0,
-            transform: phase >= 3 ? 'translateY(0)' : 'translateY(20px)',
+            opacity: phase >= 2 ? 1 : 0,
+            transform: phase >= 2 ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
           }}
         >
@@ -227,8 +212,8 @@ export default function HeroSection() {
             maxWidth: '600px',
             margin: '0 auto 2.5rem',
             lineHeight: '1.6',
-            opacity: phase >= 3 ? 1 : 0,
-            transform: phase >= 3 ? 'translateY(0)' : 'translateY(20px)',
+            opacity: phase >= 2 ? 1 : 0,
+            transform: phase >= 2 ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s',
           }}
         >
@@ -255,8 +240,8 @@ export default function HeroSection() {
           className="capsule-badge"
           style={{
             marginBottom: '1rem',
-            opacity: phase >= 3 ? 1 : 0,
-            transform: phase >= 3 ? 'translateY(0)' : 'translateY(20px)',
+            opacity: phase >= 2 ? 1 : 0,
+            transform: phase >= 2 ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s',
           }}
         >
@@ -281,15 +266,27 @@ function BotSVG({ size = 140, idSuffix = '' }) {
           <stop offset="1" stopColor="#020617" />
         </linearGradient>
       </defs>
+
+      {/* Ears */}
       <rect x="15" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
       <rect x="77" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
+
+      {/* Body & Screen */}
       <rect x="20" y="25" width="60" height="50" rx="15" fill={`url(#bodyGrad-${idSuffix})`} stroke="#ec4899" strokeWidth="2" />
       <rect x="28" y="33" width="44" height="30" rx="6" fill={`url(#screenGrad-${idSuffix})`} stroke="#334155" strokeWidth="1" />
-      <path d="M 38 45 Q 42 42 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-      <path d="M 54 45 Q 58 42 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-      <circle cx="35" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-      <circle cx="65" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-      <path d="M 47 52 Q 50 55 53 52" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" fill="none" />
+
+      {/* Happy Arched Eyes */}
+      <path d="M 38 45 Q 42 41 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
+      <path d="M 54 45 Q 58 41 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
+
+      {/* Cute Pink Blushing Cheeks 💖 */}
+      <ellipse cx="32" cy="51" rx="4" ry="2.5" fill="#ec4899" opacity="0.8" />
+      <ellipse cx="68" cy="51" rx="4" ry="2.5" fill="#ec4899" opacity="0.8" />
+
+      {/* Extremely Cute Wide Smile */}
+      <path d="M 42 54 Q 50 63 58 54" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" fill="none" />
+
+      {/* Floating Orbs (Thrusters/Wheels) */}
       <circle cx="25" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '0.5s' }} />
       <circle cx="75" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '1s' }} />
     </svg>
