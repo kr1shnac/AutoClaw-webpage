@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HeroSection from './HeroSection';
 
 export default function Home() {
   return (
@@ -23,66 +24,7 @@ export default function Home() {
           </a>
         </div>
         { }
-        <section className="section text-center py-16 md:py-32 mt-12 md:mt-0">
-
-          { }
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-            <div className="animate-cute-float" style={{ position: 'relative' }}>
-              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '120px', height: '120px', background: 'var(--accent-gradient)', filter: 'blur(50px)', opacity: '0.4', borderRadius: '50%', zIndex: '-1' }}></div>
-              <svg width="140" height="140" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="bodyGrad" x1="0" y1="0" x2="100" y2="100">
-                    <stop stopColor="#1e293b" />
-                    <stop offset="1" stopColor="#0f172a" />
-                  </linearGradient>
-                  <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="100">
-                    <stop stopColor="#0f172a" />
-                    <stop offset="1" stopColor="#020617" />
-                  </linearGradient>
-                </defs>
-                { }
-                <rect x="15" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
-                <rect x="77" y="35" width="8" height="15" rx="3" fill="#cbd5e1" className="animate-ear" />
-                { }
-                <rect x="20" y="25" width="60" height="50" rx="15" fill="url(#bodyGrad)" stroke="#ec4899" strokeWidth="2" />
-                { }
-                <rect x="28" y="33" width="44" height="30" rx="6" fill="url(#screenGrad)" stroke="#334155" strokeWidth="1" />
-                { }
-                <path d="M 38 45 Q 42 42 46 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-                <path d="M 54 45 Q 58 42 62 45" stroke="#ec4899" strokeWidth="3" strokeLinecap="round" className="animate-blink" fill="none" />
-                { }
-                <circle cx="35" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-                <circle cx="65" cy="52" r="3" fill="#ec4899" opacity="0.6" />
-                { }
-                <path d="M 47 52 Q 50 55 53 52" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" fill="none" />
-                { }
-                <circle cx="25" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '0.5s' }} />
-                <circle cx="75" cy="85" r="6" fill="#8b5cf6" className="animate-cute-float" style={{ animationDelay: '1s' }} />
-              </svg>
-            </div>
-          </div>
-
-          <h1 className="hero-title" style={{ display: 'inline-block', fontSize: '5rem', fontWeight: '900', marginBottom: '0.5rem', letterSpacing: '-0.03em', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.1' }}>
-            AutoClaw
-          </h1>
-
-          <h2 className="hero-subtitle" style={{ fontSize: '1.75rem', fontWeight: '700', color: '#fff', marginBottom: '1.5rem', letterSpacing: '-0.01em' }}>
-            The AI that actually does things.
-          </h2>
-
-          <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem', lineHeight: '1.6' }}>
-            A friendly and relentlessly efficient bot. <br />
-            It finds, evaluates, and applies to jobs entirely on its own. <br /><br />
-            <div style={{ display: 'block', marginTop: '1.5rem', fontSize: '1.25rem', fontWeight: '400', background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: '1.4' }}>
-              Just chat with it like a friend, and watch it execute.
-            </div>
-          </p>
-
-          <div className="capsule-badge" style={{ marginBottom: '1rem' }}>
-            <span className="capsule-tag">COMING SOON</span>
-            <span>Your Personal Agent</span>
-          </div>
-        </section>
+        <HeroSection />
 
         { }
         <section id="features" className="section py-12 md:py-16">
