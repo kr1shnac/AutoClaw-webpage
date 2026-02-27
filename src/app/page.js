@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import HeroSection from './HeroSection';
+import UnderTheHood from '../components/UnderTheHood';
+import TechStackMarquee from '../components/TechStackMarquee';
+import LiveGitLog from '../components/LiveGitLog';
 
 export default function Home() {
   return (
@@ -27,50 +30,62 @@ export default function Home() {
         <HeroSection />
 
         { }
-        <section id="features" className="section py-12 md:py-16">
-          <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '3rem', color: '#fff' }}>
+        <section id="features" className="section py-10 md:py-16">
+          <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '2rem', color: '#fff' }}>
             Why AutoClaw?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
 
-            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(236,72,153,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
+            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(236,72,153,0.3)', borderRadius: '16px', transition: 'transform 0.3s' }} className="p-5 md:p-8 flex flex-row md:flex-col items-center md:items-center text-left md:text-center gap-4 md:gap-0 hover:scale-[1.02]">
+              <div className="shrink-0 flex justify-center w-12 md:w-full md:mb-4">
+                <svg width="40" height="40" className="md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></svg>
               </div>
-              <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Smart Adaptation</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Traditional bots break when websites change. AutoClaw adapts automatically, ensuring you never miss an application.
-              </p>
+              <div>
+                <h3 style={{ color: '#fff', fontWeight: '700' }} className="text-[1.1rem] md:text-[1.3rem] mb-1 md:mb-4">Smart Adaptation</h3>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }} className="text-[0.9rem] md:text-base">
+                  Traditional bots break when websites change. AutoClaw adapts automatically, ensuring you never miss an application.
+                </p>
+              </div>
             </div>
 
-            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '16px', transition: 'transform 0.3s' }} className="p-5 md:p-8 flex flex-row md:flex-col items-center md:items-center text-left md:text-center gap-4 md:gap-0 hover:scale-[1.02]">
+              <div className="shrink-0 flex justify-center w-12 md:w-full md:mb-4">
+                <svg width="40" height="40" className="md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
               </div>
-              <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Fully Autonomous</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                No more repetitive clicking. Start the process and let AutoClaw effortlessly handle the entire workflow for you.
-              </p>
+              <div>
+                <h3 style={{ color: '#fff', fontWeight: '700' }} className="text-[1.1rem] md:text-[1.3rem] mb-1 md:mb-4">Fully Autonomous</h3>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }} className="text-[0.9rem] md:text-base">
+                  No more repetitive clicking. Start the process and let AutoClaw effortlessly handle the workflow for you.
+                </p>
+              </div>
             </div>
 
-            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: '16px', padding: '2.5rem', textAlign: 'center', transition: 'transform 0.3s' }} className="hover:scale-[1.02]">
-              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+            <div style={{ background: 'var(--card-bg)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: '16px', transition: 'transform 0.3s' }} className="p-5 md:p-8 flex flex-row md:flex-col items-center md:items-center text-left md:text-center gap-4 md:gap-0 hover:scale-[1.02]">
+              <div className="shrink-0 flex justify-center w-12 md:w-full md:mb-4">
+                <svg width="40" height="40" className="md:w-12 md:h-12" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
               </div>
-              <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '1rem', fontWeight: '700' }}>Privacy First</h3>
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                Your data stays absolutely safe. Everything runs locally on your machine, so your resume is never exposed.
-              </p>
+              <div>
+                <h3 style={{ color: '#fff', fontWeight: '700' }} className="text-[1.1rem] md:text-[1.3rem] mb-1 md:mb-4">Privacy First</h3>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }} className="text-[0.9rem] md:text-base">
+                  Your data stays absolutely safe. Everything runs locally on your machine, so your resume is never exposed.
+                </p>
+              </div>
             </div>
 
           </div>
         </section>
 
+        <UnderTheHood />
+
+        <section className="section py-8 max-w-5xl mx-auto px-4 w-full">
+          <LiveGitLog />
+        </section>
+
         { }
-        <section id="telegram" className="section py-12 md:py-20">
-          <div className="telegram-card" style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9))', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '24px', padding: '3rem', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '3rem', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
+        <section id="telegram" className="section py-10 md:py-20">
+          <div className="telegram-card p-6 md:p-12 gap-8 md:gap-12" style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9))', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '24px', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', position: 'relative', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
             { }
-            <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '300px', height: '300px', background: '#38bdf8', filter: 'blur(120px)', opacity: '0.15', borderRadius: '50%', zIndex: 0, pointerEvents: 'none' }}></div>
+            <div className="hidden md:block absolute" style={{ top: '-100px', right: '-100px', width: '300px', height: '300px', background: '#38bdf8', filter: 'blur(120px)', opacity: '0.15', borderRadius: '50%', zIndex: 0, pointerEvents: 'none' }}></div>
 
             <div style={{ flex: '1 1 400px', zIndex: 1 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -88,33 +103,32 @@ export default function Home() {
                 Chat with your bot. It understands. It executes.
               </h3>
 
-              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '1.1rem', marginBottom: '2rem', maxWidth: '480px' }}>
+              <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', fontSize: '1.1rem', marginBottom: '1.5rem', maxWidth: '480px' }}>
                 No complex dashboards required. Just message your AutoClaw bot: <span style={{ color: '#e2e8f0', fontWeight: '500' }}>&quot;Find software engineer roles in YC&quot;</span> and it autonomously begins searching, tailoring, and applying.
               </p>
-
             </div>
 
             { }
             <div style={{ flex: '1 1 300px', zIndex: 1, position: 'relative', display: 'flex', justifyContent: 'center' }}>
-              <div style={{ width: '100%', maxWidth: '340px', background: '#0f172a', border: '1px solid #1e293b', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px -5px rgba(0, 0, 0, 0.4)' }}>
+              <div style={{ width: '100%', maxWidth: '340px', background: '#0f172a', border: '1px solid #1e293b', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px -5px rgba(0, 0, 0, 0.4)' }} className="transform scale-[0.9] sm:scale-100 origin-center md:origin-right">
                 { }
-                <div style={{ background: '#1e293b', padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.875rem', borderBottom: '1px solid #334155' }}>
-                  <div style={{ width: '40px', height: '40px', background: 'var(--accent-gradient)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ background: '#1e293b', display: 'flex', alignItems: 'center', gap: '0.875rem', borderBottom: '1px solid #334155' }} className="p-3 md:p-4">
+                  <div style={{ width: '36px', height: '36px', background: 'var(--accent-gradient)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="md:w-10 md:h-10">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="16" x2="8" y2="16" /><line x1="16" y1="16" x2="16" y2="16" /></svg>
                   </div>
                   <div>
-                    <div style={{ color: '#fff', fontWeight: '600', fontSize: '0.95rem' }}>AutoClaw Bot</div>
-                    <div style={{ color: '#38bdf8', fontSize: '0.8rem', fontWeight: '500' }}>bot</div>
+                    <div style={{ color: '#fff', fontWeight: '600' }} className="text-[0.9rem] md:text-[0.95rem]">AutoClaw Bot</div>
+                    <div style={{ color: '#38bdf8', fontWeight: '500' }} className="text-[0.75rem] md:text-[0.8rem]">bot</div>
                   </div>
                 </div>
                 { }
-                <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1rem', background: '#020617', height: '240px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', background: '#020617', height: '220px' }} className="p-4 md:p-5 md:h-[240px]">
                   { }
-                  <div style={{ alignSelf: 'flex-end', background: '#38bdf8', color: '#0f172a', padding: '0.75rem 1rem', borderRadius: '16px 16px 4px 16px', maxWidth: '85%', fontSize: '0.9rem', fontWeight: '500', lineHeight: '1.4' }}>
+                  <div style={{ alignSelf: 'flex-end', background: '#38bdf8', color: '#0f172a', borderRadius: '16px 16px 4px 16px', maxWidth: '85%', fontWeight: '500', lineHeight: '1.4' }} className="px-3 py-2 md:px-4 md:py-3 text-[0.85rem] md:text-[0.9rem]">
                     Find and apply to frontend roles at YC startups.
                   </div>
                   { }
-                  <div style={{ alignSelf: 'flex-start', background: '#1e293b', color: '#e2e8f0', padding: '0.875rem 1rem', borderRadius: '16px 16px 16px 4px', maxWidth: '85%', fontSize: '0.9rem', border: '1px solid #334155', lineHeight: '1.5' }}>
+                  <div style={{ alignSelf: 'flex-start', background: '#1e293b', color: '#e2e8f0', borderRadius: '16px 16px 16px 4px', maxWidth: '85%', border: '1px solid #334155', lineHeight: '1.5' }} className="px-3 py-2 md:px-4 md:py-3 text-[0.85rem] md:text-[0.9rem]">
                     <span style={{ fontWeight: '600', color: '#fff' }}>Understood! 🚀</span><br /><br />
                     Starting autonomous sequence...<br />
                     <span style={{ color: '#38bdf8', display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -132,9 +146,9 @@ export default function Home() {
                   </div>
                 </div>
                 { }
-                <div style={{ padding: '0.75rem 1rem', background: '#0f172a', borderTop: '1px solid #1e293b', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <div style={{ background: '#0f172a', borderTop: '1px solid #1e293b', display: 'flex', alignItems: 'center', gap: '0.75rem' }} className="p-3 md:p-4">
                   <div style={{ flex: 1, height: '36px', background: '#1e293b', borderRadius: '18px', display: 'flex', alignItems: 'center', padding: '0 1rem' }}>
-                    <span style={{ color: '#64748b', fontSize: '0.9rem' }}>Message...</span>
+                    <span style={{ color: '#64748b' }} className="text-[0.85rem] md:text-[0.9rem]">Message...</span>
                   </div>
                   <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#38bdf8', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', transition: 'transform 0.2s' }} className="hover:scale-[1.1]">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,26 +164,29 @@ export default function Home() {
         </section>
 
         { }
-        <section id="targets" className="section py-12 md:py-20">
-          <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '3rem', color: '#fff' }}>
+        <section id="targets" className="section py-10 md:py-20">
+          <h2 style={{ fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '1.5rem', color: '#fff' }}>
             Supported Platforms
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6">
             {[
+              { name: 'Internshala', color: '#0ea5e9', symbol: 'I', url: 'https://internshala.com' },
               { name: 'Lever', color: '#38bdf8', symbol: 'L', url: 'https://lever.co' },
               { name: 'Greenhouse', color: '#10b981', symbol: 'G', url: 'https://greenhouse.io' },
               { name: 'Y Combinator', color: '#f97316', symbol: 'Y', url: 'https://ycombinator.com' },
-              { name: 'LinkedIn', color: '#0ea5e9', symbol: 'in', url: 'https://linkedin.com' }
+              { name: 'LinkedIn', color: '#0284c7', symbol: 'in', url: 'https://linkedin.com' }
             ].map((platform, i) => (
-              <Link key={platform.name} href={platform.url} target="_blank" style={{ textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,41,59,0.5), rgba(15,23,42,0.8))', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center', transition: 'all 0.3s', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', position: 'relative', overflow: 'hidden' }} className="hover:-translate-y-2 hover:border-[rgba(255,255,255,0.2)] hover:shadow-2xl hover:shadow-[#0ea5e9]/20 group">
-                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: `linear-gradient(135deg, ${platform.color} 0%, #0f172a 120%)`, display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: `0 4px 20px -5px ${platform.color}, inset 0 1px 1px rgba(255,255,255,0.4)`, zIndex: 1 }}>
-                  <span style={{ color: '#fff', fontSize: platform.symbol === 'in' ? '1.5rem' : '1.75rem', fontWeight: '800', fontFamily: platform.symbol === 'in' ? 'sans-serif' : 'serif', letterSpacing: platform.symbol === 'in' ? '-1px' : '0' }}>{platform.symbol}</span>
+              <Link key={platform.name} href={platform.url} target="_blank" style={{ textDecoration: 'none', background: 'linear-gradient(135deg, rgba(30,41,59,0.5), rgba(15,23,42,0.8))', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px', transition: 'all 0.3s', position: 'relative', overflow: 'hidden' }} className="flex flex-row md:flex-col items-center md:justify-center p-3 md:p-6 gap-3 md:gap-4 hover:-translate-y-1 hover:border-[rgba(255,255,255,0.2)] hover:shadow-lg hover:shadow-[#0ea5e9]/20 group">
+                <div style={{ borderRadius: '10px', background: `linear-gradient(135deg, ${platform.color} 0%, #0f172a 120%)`, display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: `0 4px 15px -4px ${platform.color}, inset 0 1px 1px rgba(255,255,255,0.4)`, zIndex: 1 }} className="w-10 h-10 md:w-14 md:h-14 shrink-0">
+                  <span style={{ color: '#fff', fontWeight: '800', fontFamily: platform.symbol === 'in' ? 'sans-serif' : 'serif', letterSpacing: platform.symbol === 'in' ? '-1px' : '0' }} className="text-[1.1rem] md:text-[1.5rem]">{platform.symbol}</span>
                 </div>
-                <h3 style={{ color: '#f8fafc', fontSize: '1.25rem', fontWeight: '700', margin: 0, zIndex: 1 }}>{platform.name}</h3>
+                <h3 style={{ color: '#f8fafc', fontWeight: '700', margin: 0, zIndex: 1 }} className="text-[0.95rem] md:text-[1.15rem] leading-tight text-left md:text-center w-full">{platform.name}</h3>
               </Link>
             ))}
           </div>
         </section>
+
+        <TechStackMarquee />
 
       </main>
 
