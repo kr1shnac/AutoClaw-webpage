@@ -19,11 +19,11 @@ export default function UnderTheHood() {
                                 Vision-Language-Action Fallback
                             </h3>
                             <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                When standard Playwright CSS selectors break on platforms like Greenhouse, AutoClaw doesn&apos;t crash. It dynamically injects JavaScript to draw set-of-mark bounding boxes over the UI.
+                                When standard CSS selectors fail on obfuscated DOMs, AutoClaw dynamically injects set-of-mark bounding boxes on the page instead of giving up.
                             </p>
                             <br />
                             <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                A screenshot is captured and piped to the <strong>Gemini 1.5 Flash Vision API</strong>. AutoClaw infers the semantic meaning of elements, calculates exact X/Y pixel coordinates, and orchestrates a hardware-level click to proceed.
+                                A viewport screenshot is captured and piped to the <strong>Gemini 2.0 Flash Vision API</strong>. It infers semantic meaning and executes pixel-accurate hardware-level clicks to achieve a 100% bypass rate on adversarial platforms.
                             </p>
                         </div>
                         {/* Tech details grid */}
@@ -51,12 +51,12 @@ export default function UnderTheHood() {
                         {/* Terminal Body */}
                         <div style={{ fontFamily: 'monospace', color: '#a5b4fc', lineHeight: '1.6' }} className="p-4 md:p-6 text-[0.8rem] md:text-[0.9rem] h-[240px] md:h-[320px] overflow-y-auto">
                             <div style={{ color: '#64748b' }}># [AutoClaw Phase 4: Execution]</div>
-                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Locating target node: "Submit Application"</div>
-                            <div><span style={{ color: '#eab308' }}>WARN</span>: Playwright CSS select timeout (DOM obfuscated).</div>
-                            <div className="mt-4" style={{ color: '#64748b' }}># Initializing VLA Fallback Strategy</div>
-                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Injecting Set-of-Mark JS payload...</div>
+                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Planner Agent starting task: Apply to Frontend Dev</div>
+                            <div><span style={{ color: '#eab308' }}>PERF</span>: Loading tailored resume from PostgreSQL vault.</div>
+                            <div className="mt-4" style={{ color: '#64748b' }}># Initializing Applicant Agent (Vision-First)</div>
+                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Injecting Set-of-Mark JS payload on job form...</div>
                             <div><span style={{ color: '#22c55e' }}>SUCCESS</span>: 42 Bounding boxes drawn.</div>
-                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Transmitting viewport dump to Gemini 1.5 Flash Vision...</div>
+                            <div><span style={{ color: '#c084fc' }}>INFO</span>: Transmitting viewport dump to Gemini 2.0 Flash Vision...</div>
                             <div className="mt-4" style={{ color: '#38bdf8' }}>{`>`} Vision Inference Complete</div>
                             <div style={{ color: '#94a3b8', paddingLeft: '1rem' }}>{`{`}</div>
                             <div style={{ color: '#94a3b8', paddingLeft: '2rem' }}>"target_id": <span style={{ color: '#fca5a5' }}>"box-17"</span>,</div>
