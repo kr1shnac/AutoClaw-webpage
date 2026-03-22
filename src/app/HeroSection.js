@@ -200,7 +200,7 @@ export default function HeroSection() {
             transition: 'opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s',
           }}
         >
-          The AI that actually does things.
+          A truly intelligent job application agent.
         </h2>
 
         {/* Description */}
@@ -216,8 +216,8 @@ export default function HeroSection() {
             transition: 'opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s',
           }}
         >
-          A friendly and relentlessly efficient bot. <br />
-          It finds, evaluates, and applies to jobs entirely on its own. <br /><br />
+          A relentless, intelligent job search copilot. <br />
+          It finds jobs, tailors your resume, writes cover letters, and applies for you — autonomously, 24/7. <br /><br />
           <span
             style={{
               display: 'block',
@@ -230,7 +230,7 @@ export default function HeroSection() {
               lineHeight: '1.4',
             }}
           >
-            Just chat with it like a friend, and watch it execute.
+            India-first. Open Source. Free forever.
           </span>
         </p>
 
@@ -245,7 +245,7 @@ export default function HeroSection() {
           }}
         >
           <span className="capsule-tag">COMING SOON</span>
-          <span>Your Personal Agent</span>
+          <span>Apply smarter. Get hired faster.</span>
         </div>
       </section>
     </>

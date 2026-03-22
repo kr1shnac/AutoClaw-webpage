@@ -2,14 +2,14 @@ import React from 'react';
 
 export default function TechStackMarquee() {
     const stack = [
-        { name: 'Python', color: '#3776AB' },
+        { name: 'Next.js 14', color: '#FFFFFF' },
+        { name: 'Tailwind CSS', color: '#38bdf8' },
+        { name: 'FastAPI', color: '#009688' },
         { name: 'Playwright', color: '#2EAD33' },
-        { name: 'Ollama', color: '#FFFFFF' },
-        { name: 'Llama 3.1', color: '#04A0DF' },
-        { name: 'Gemini Vision', color: '#8E75B2' },
-        { name: 'SQLite (WAL)', color: '#003B57' },
-        { name: 'Streamlit', color: '#FF4B4B' },
-        { name: 'Pydantic', color: '#E92063' },
+        { name: 'PostgreSQL', color: '#336791' },
+        { name: 'Redis', color: '#DC382D' },
+        { name: 'Gemini 2.0 Flash', color: '#8E75B2' },
+        { name: 'Docker', color: '#2496ED' },
     ];
 
     // We display the list multiple times to ensure smooth infinite scrolling even on ultra-wide screens
