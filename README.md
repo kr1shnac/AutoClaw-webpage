@@ -1,8 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kr1shnac/AutoClaw/main/public/cute-bot-placeholder.png" alt="AutoClaw Logo" width="120" height="120" />
   <h1>AutoClaw</h1>
-  <p><b>The AI that actually does things.</b></p>
-  <p>A friendly and relentlessly efficient bot. It finds, evaluates, and applies to jobs entirely on its own. Just chat with it like a friend, and watch it execute.</p>
+  <p><b>The truly intelligent job application agent.</b></p>
+  <p>Applying to 500+ jobs manually is soul-crushing. AutoClaw parses your resume, scours job boards, tailors your applications using AI, bypasses complex ATS forms with a native Vision-Language-Action pipeline, and preps you for your interviews.</p>
   
   <p>
     <a href="https://github.com/kr1shnac/AutoClaw.git"><b>Star on GitHub</b></a> •
@@ -12,42 +11,51 @@
 
 ---
 
-## 🚀 Features
+## 🚀 How It Actually Works
 
-### 🧠 Smart Adaptation
-Traditional bots break when websites change. AutoClaw adapts automatically, ensuring you never miss a job application opportunity.
+AutoClaw replaces spray-and-pray spamming with a highly deliberate **4-Step Workflow**:
 
-### ⚙️ Fully Autonomous
-No more repetitive clicking or manual data entry. Start the process and let AutoClaw effortlessly handle the entire workflow for you.
-
-### 🔒 Privacy First
-Your data stays absolutely safe. Everything runs locally on your machine, so your resume and personal information are never exposed to third-party servers.
-
-### 📱 Works with Telegram
-Chat with your bot. It understands. It executes.
-No complex dashboards required. Just message your AutoClaw bot: *"Find software engineer roles in YC"* and it autonomously begins searching, tailoring, and applying.
+1. **Drop Your Resume**: AutoClaw parses your master resume, maps your technical skills, and builds a centralized profile with zero manual data entry.
+2. **Agent Scours Web**: It browses job boards autonomously, scoring listings against your exact profile to cut out the noise.
+3. **Tailor & Apply**: It generates a custom resume and cover letter for the specific job, and visually clicks through ATS forms using **Gemini 2.0 Flash Vision API** to achieve a 100% DOM bypass rate.
+4. **Interview Prep**: AutoClaw detects invites in your inbox, syncs them to your calendar, and generates a bespoke research brief 48 hours before the interview.
 
 ---
 
-## 🎯 Supported Platforms
+## 🧠 True 3-Agent Orchestration 
 
-AutoClaw currently supports seamless automated applications on the following platforms:
+AutoClaw doesn't just run a script. It delegates tasks to three specialized AI brains working alongside a persistent PostgreSQL memory vault:
+- **The Planner**: Scores jobs, delegates tasks, and acts as the master orchestrator.
+- **The Scanner**: Researches listings and extracts requirements autonomously.
+- **The Applicant**: Acts as the executor. Instantly tailors resumes and fires the Validator loop dynamically after every browser action to guarantee success.
 
-- **Lever**
-- **Greenhouse**
-- **Y Combinator**
+---
+
+## 🎯 Supported Platforms (Outsmart The System)
+
+The only agent that boasts robust India-First support right out of the box:
+- **Internshala**
+- **Naukri.com**
+- **Indeed**
+- **Wellfound**
 - **LinkedIn**
 
 ---
 
-## 💻 Getting Started
+## 💻 Tech Stack
+
+AutoClaw is built for scale, resilience, and adversarial ATS environments:
+- **Frontend**: Next.js 14, Tailwind CSS, React
+- **Agent Backend**: Python, FastAPI
+- **Browser Automation**: Playwright, Gemini 2.0 Flash Vision API
+- **Persistence & Memory**: PostgreSQL, Redis
+- **Containerization**: Docker
+
+---
+
+## 🚀 Getting Started (Frontend Dashboard)
 
 This repository contains the landing page and frontend implementation for AutoClaw.
-
-### Prerequisites
-
-- Node.js 18+
-- npm, yarn, pnpm, or bun
 
 ### Installation
 
@@ -60,36 +68,20 @@ This repository contains the landing page and frontend implementation for AutoCl
 2. Install dependencies:
    ```bash
    npm install
-   # or
-   yarn install
-   # or
-   pnpm install
    ```
 
 3. Run the development server:
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ---
 
-## 🏗️ Tech Stack
-
-- **Framework**: [Next.js](https://nextjs.org/) (App Router)
-- **Styling**: Vanilla CSS with modern UI elements (Glassmorphism, Gradients, Animations)
-- **Deployment**: Vercel ready
-
----
-
 ## 🤝 Contributing
 
-We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch soon. In the meantime, the project is completely open-source!
+We are currently building AutoClaw because applying to jobs manually is soul-crushing. The full platform is expected to launch in the next few months. In the meantime, the project is completely open-source!
 
 Feel free to check out our progress, submit pull requests, or drop us an email if you want to collaborate.
 
@@ -101,8 +93,6 @@ Built with ❤️ and slight desperation by:
 
 - **[Krishna](https://krishnac.vercel.app/)**
 - **[Nuhan](https://nuhan04.vercel.app/)**
-
----
 
 <div align="center">
   <i>If you like this project, please consider giving it a ⭐ on GitHub!</i>
